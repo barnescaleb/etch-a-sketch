@@ -1,5 +1,58 @@
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    font-family: sans-serif;
+}
+
 .board {
     width: 500px;
     height: 500px;
     display: grid;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 3px;
+    margin-top: 10px;
+    margin-right: 6px;
+    border: black;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
 }

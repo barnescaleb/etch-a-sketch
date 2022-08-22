@@ -17,10 +17,9 @@
                 <button onclick="changeColor('white')">Eraser</button>
                 <button onclick="changeColor('random')">Random</button>
                 <button onclick="resetBoard()">Clear</button>
+                <input  id="sizeSlider" type="range" value="16" onchange="changeSize(this.value)">
             </div>
         </div>
-        <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
-        <button>Change Size</button>
     </div>
 </body>
 <script src="app.js"></script>
